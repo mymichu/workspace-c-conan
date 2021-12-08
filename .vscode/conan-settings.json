@@ -1,0 +1,13 @@
+{
+    "profiles": [
+        {
+            "name":"linux",
+            "conanFile": "${workspaceFolder}/conanfile.py",
+            "profile":"default",
+            "installArg": "-s build_type=Release --build missing",
+            "createUser": "michel",
+            "createChannel": "development",
+            "createArg":"--build=missing"
+        }
+    ]
+}

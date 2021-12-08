@@ -1,0 +1,11 @@
+include(GoogleTest)
+#include_directories(BEFORE ${CONAN_INCLUDE_DIRS_GTEST})
+if(COMMAND cmake_policy)
+    cmake_policy(SET CMP0003 NEW)
+endif(COMMAND cmake_policy)
+
+add_executable(calculator_test calculator.cpp)
+target_include_directories(calculator_test PRIVATE ${PROJECT_SOURCE_DIR})
+target_link_libraries(calculator_test PRIVATE calculator ${CONAN_LIBS})
+target_include_directories(calculator_test PRIVATE ${CONAN_INCLUDE_DIRS_GTEST})
+gtest_discover_tests(calculator_test)

@@ -1,0 +1,35 @@
+{
+	"name": "devcontainer-c",
+	"dockerFile": "Dockerfile",
+	"runArgs": [
+		"--cap-add=SYS_PTRACE",
+		"--security-opt",
+		"seccomp=unconfined"
+	],
+	"postCreateCommand": "conan profile update settings.compiler.libcxx=libstdc++11 default", 
+	"settings": {
+		"terminal.integrated.shell.linux": "/bin/bash",
+	},
+	"remoteUser": "dev",
+	"extensions": [
+		"ms-vscode.cpptools",
+		"twxs.cmake",
+		"mhutchie.git-graph",
+		"joaompinto.asciidoctor-vscode",
+		"cschlosser.doxdocgen",
+		"ms-python.python",
+		"mhutchie.git-graph",
+		"disroop.conan",
+		"formulahendry.code-runner",
+		"matepek.vscode-catch2-test-adapter",
+		"ms-vscode.cmake-tools",
+		"anjali.clipboard-history",
+		"vscode-icons-team.vscode-icons",
+		"alefragnani.numbered-bookmarks",
+		"cheshirekow.cmake-format",
+		"go2sh.cmake-integration-vscode"
+	],
+	"containerEnv": {"CMAKE_MAKE_PROGRAM":"make",
+		"CMAKE_C_COMPILER":"clang",
+		"CMAKE_CXX_COMPILER":"clang++",}
+}

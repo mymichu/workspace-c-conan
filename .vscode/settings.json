@@ -1,0 +1,7 @@
+{
+    "cmake.configureOnOpen": false,
+    "cmake.buildDirectory": "${workspaceFolder}/build/${buildKit}",
+    "cmake.configureOnEdit": true,
+    "cmake.parseBuildDiagnostics": true,
+    "cmake.sourceDirectory": "${workspaceFolder}"
+}

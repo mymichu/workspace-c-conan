@@ -8,7 +8,7 @@
 	],
 	"postCreateCommand": "conan profile new default --detect && conan profile update settings.compiler.libcxx=libstdc++11 default", 
 	"settings": {
-		"terminal.integrated.shell.linux": "/bin/bash",
+		"terminal.integrated.shell.linux": "/bin/zsh",
 	},
 	"remoteUser": "dev",
 	"extensions": [

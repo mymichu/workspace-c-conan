@@ -27,7 +27,8 @@
 		"vscode-icons-team.vscode-icons",
 		"alefragnani.numbered-bookmarks",
 		"cheshirekow.cmake-format",
-		"go2sh.cmake-integration-vscode"
+		"go2sh.cmake-integration-vscode",
+		"ms-vscode.cpptools-extension-pack"
 	],
 	"containerEnv": {"CMAKE_MAKE_PROGRAM":"make",
 		"CMAKE_C_COMPILER":"clang",

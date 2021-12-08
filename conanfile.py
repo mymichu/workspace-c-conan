@@ -2,7 +2,7 @@ from conans import ConanFile, CMake
 
 
 class ExampleC(ConanFile):
-    name = "exampleC"
+    name = "example"
     version = "0.1.0"
     license = "closed"
     url = "TODO"

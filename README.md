@@ -7,4 +7,5 @@ This is a template/example repository which helps developers to start with writi
  - Conan
  - CMake
  - Clang
+ - GTest (dependecy via conan)
  - VsCode(DevContainer Plugin) 

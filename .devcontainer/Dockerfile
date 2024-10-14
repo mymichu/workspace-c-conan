@@ -63,7 +63,7 @@ ENV TERM xterm
 ENV SHELL /bin/zsh
  # run the installation script  
 RUN wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || true
-RUN git clone git://github.com/zsh-users/zsh-completions.git $HOME/.oh-my-zsh/custom/plugins/zsh-completions
+RUN git clone --depth 1 https://github.com/zsh-users/zsh-completions.git $HOME/.oh-my-zsh/custom/plugins/zsh-completions
 RUN cd $HOME && curl -fsSLO https://raw.githubusercontent.com/romkatv/dotfiles-public/master/.purepower
 ADD agnoster.zsh-theme $HOME/.oh-my-zsh/themes
 # zsh configuration

@@ -26,7 +26,7 @@ RUN ln -s /usr/bin/python3 /usr/bin/python \
 #
 #Install cmake and conan
 RUN pip install cmake \
-    && pip install conan
+    && pip install conan==1.65.0
 #
 # Add dev user with no root rights
 ARG USERNAME=dev
